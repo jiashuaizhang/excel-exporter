@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: excel-exporter
+  profiles:
+    active: dev
+logging:
+  level:
+    org.springframework.web: INFO
+    com.unicom.eos.excel.exporter.mapper: DEBUG
+  file:  "logs/${spring.application.name}.log"
+export:
+  # 需要导出的excel路径
+  excelDir: E:\\temp\\gridAreaExport\\
